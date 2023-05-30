@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rest Countries</title>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-info">Where In The World?</div>
+            <div class="header-toggle"><i class="fa-solid fa-moon"></i> <span>Dark Mode</span></div>
+        </div>
+    </div>
+</header>
+<nav id="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <div class="nav-input">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" placeholder="search for a country" id="filter">
+            </div>
+            <div class="nav-search">
+                <ul class="dropdown"><li class="list-main">Filter by Region <span><i class="fa-solid fa-chevron-down"></i></span>
+                    <ul class="list">
+                        <li class="list-item">Africa</li>
+                        <li class="list-item">America</li>
+                        <li class="list-item">Asia</li>
+                        <li class="list-item">Europe</li>
+                        <li class="list-item">Oceania</li>
+                    </ul></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="showcase">
+    <div class="container">
+        <div class="box">
+            <!-- <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="country">Germany</div>
+                    <div class="population">population: 10000</div>
+                    <div class="region">Region: Europe</div>
+                    <div class="capital">capital: berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">Germany</a></h3>
+                    <p class="details population">population: 10000</p>
+                    <p class="details Region">Region: Europe</p>
+                    <p class="capital">capital: berlin
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <div class="country">Germany</div>
+                    <div class="population">population: 10000</div>
+                    <div class="region">Region: Europe</div>
+                    <div class="capital">capital: berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">Germany</a></h3>
+                    <div class="population"><span class="bg-text">population:</span> 10000</div>
+                    <div class="region"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="capital"><span class="bg-text">capital:</span> berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">Germany</a></h3>
+                    <div class="population"><span class="bg-text">population:</span> 10000</div>
+                    <div class="region"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="capital"><span class="bg-text">capital:</span> berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">United States  America</a></h3>
+                    <div class="population"><span class="bg-text">population:</span> 10000</div>
+                    <div class="region"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="capital"><span class="bg-text">capital:</span> berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">Germany</a></h3>
+                    <div class="population"><span class="bg-text">population:</span> 10000</div>
+                    <div class="region"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="capital"><span class="bg-text">capital:</span> berlin
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="boxes-img">
+                    <img src="/image/ch.png" alt="">
+                </div>
+                <div class="box-info">
+                    <h3 class="country"><a href="#">Germany</a></h3>
+                    <div class="population"><span class="bg-text">population:</span> 10000</div>
+                    <div class="region"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="capital"><span class="bg-text">capital:</span> berlin
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+    <script src="ui.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

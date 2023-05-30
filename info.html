@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="info.css" />
+    <title>Details Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="header-info">Where In The World?</div>
+          <div class="header-toggle">
+            <i class="fa-solid fa-moon"></i> <span>Dark Mode</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <aside class="back-arrow">
+          <div class="arrow-nav">
+            <i class="fa-solid fa-arrow-left"></i>
+            back
+          </div>
+        </aside>
+        <article id="showcase">
+          <div class="showcase-img">
+            <img src="/image/be.svg" alt="" />
+          </div>
+          <div class="showcase-info">
+            <div class="country-info">
+                <h2 class="country">Germany</h2>
+            </div>
+            <section class="flex">
+
+                <aside class="box-info left">
+                    <div class="info-native pb-s">
+                <span class="bg-text">Native Name:</span> belgie
+              </div>
+              <div class="info-population pb-s">
+                <span class="bg-text">population:</span> 10000
+              </div>
+              <div class="info-region pb-s">
+                <span class="bg-text">Region:</span> Europe
+              </div>
+              <div class="info-sub-region pb-s">
+                <span class="bg-text">Sub Region:</span> Western Europe
+              </div>
+              <div class="info-capital pb-s">
+                <span class="bg-text">capital:</span> berlin
+              </div>
+            </aside>
+            <aside class="box-info right">
+                <div class="info-region pb-s"><span class="bg-text">Region:</span> Europe</div>
+                    <div class="info-sub-region pb-s"><span class="bg-text">Sub Region:</span> Western Europe</div>
+                    <div class="info-capital pb-s"><span class="bg-text">capital:</span> berlin
+                    </div>
+            </aside>
+        </section>
+
+            <div class="borders">
+                <p class="bg-text">Border Countries:</p>
+            <div class="b-countries">
+                <div class="countries">France</div>
+                <div class="countries">Germany</div>
+                <div class="countries">Nertherlands</div>
+            </div>
+        </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="ui.js"></script>
+    <script src="data.js"></script>
+    <script src="app1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+:root{
+    --element:hsl(0, 0%, 100%);
+    --background:hsl(0, 0%, 98%);
+    --text: hsl(200, 15%, 8%); 
+    --input:hsl(0, 0%, 52%);
+}
+
+
+.light{
+    --element:hsl(209, 23%, 22%);
+    --background:hsl(207, 26%, 17%);
+    --text:hsl(0, 0%, 100%);
+    --input:hsl(0, 0%, 52%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--background);
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 2rem;
+
+}
+#header{
+padding: 1rem 0 ;
+background: var(--element);
+box-shadow: 0px 0px 2px var(--text);
+position: relative;
+z-index: 2;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.header-info{
+    font-weight: 800;
+    font-size: 23px;
+}
+.header-toggle{
+    cursor: pointer;
+}
+.header-toggle span{
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+/* nav area */
+#navbar{
+    padding-bottom: 2.5rem;
+    /* background: var(--background); */
+    padding-top: 1.25rem;
+    /* overflow: hidden; */
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-input{
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+}
+.nav-input input{
+    padding: .75rem 2.5rem;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px 0px 5px var(--input);
+    background: var(--element);
+}
+.nav-input .icon{
+    position: absolute;
+    left: 10px;
+    color: var(--input);
+
+}
+.dropdown{
+    /* padding: .65rem 2rem; */
+    box-shadow: 0px 0px 5px var(--input);
+    background: var(--element);
+    width: max-content;
+}
+
+.dropdown span{
+    padding-left: 20px;
+}
+.dropdown .list-main{
+    position: relative;
+    width: 100%;
+    padding: .65rem 2rem;
+    cursor: pointer;
+}
+
+.list-main .list{
+    position: absolute;
+    top: 100%;
+    background: var(--element);
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 0px 5px var(--input);
+    margin-top: 20px;
+    padding: .65rem 0rem;
+    display: none;
+    /* z-index: 223; */
+}
+.continent{
+    position: relative;
+    z-index: 223;
+}
+.show{
+    display: block !important;
+}
+
+.list .list-item{
+    padding: 0.25rem;
+    cursor: pointer;
+}
+.list .list-item:hover{
+    background:rgba(0, 0, 0, 0.3);
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3.5rem;
+    justify-content: center;
+}
+.boxes{
+    /* max-width: 400px; */
+    box-shadow: 0px 0px 2px var(--input);
+    border-radius: 5px;
+} 
+.boxes-img img{
+    height:100%;
+    width:100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 2px var(--input);
+} 
+.boxes-img{
+    border-radius: 5px 5px 0 0;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0px 0px 2px var(--input);
+}
+.boxes-img:hover{
+    transform: scale(1.1);
+}
+.box-info{
+    padding: 1rem ;
+}
+
+.box-info .bg-text{
+    color: var(--text);
+    font-weight: 600;
+}
+.box-info .capital{
+    padding-bottom: .5rem;
+}
+
+.box-info .country{
+    padding-bottom: .5rem;
+}
+.box-info .country a{
+    font-weight: 800;
+    color: var(--text);
+}
+.box-info .population{
+padding-bottom: .15rem;
+}
+.box-info .region{
+padding-bottom: .15rem;
+}
+
+
+/* @media(max-width:767px){
+    .header-info{
+        font-size: 12px;
+        font-weight: 600px;
+        white-space: nowrap;
+    }
+    .header-toggle span{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+} */
+
+@media(max-width:450px){
+    .header-info{
+        font-size: 12px;
+        font-weight: 600px;
+        white-space: nowrap;
+    }
+    .header-toggle span{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .header-toggle{
+        font-size: 12px;
+    }
+    .nav-content{
+        display: block;
+    }
+
+    .nav-input{
+        margin-bottom: 1.25rem;
+    }
+}
