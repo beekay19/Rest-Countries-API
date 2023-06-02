@@ -10,6 +10,7 @@ body{
 }
 .main-content {
   padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .arrow-nav {
@@ -39,6 +40,7 @@ body{
 }
 .showcase-info{
     padding-left: 1rem;
+    width: 100%;
 }
 .flex{
     display: flex;
@@ -68,6 +70,7 @@ padding-left: 0;
     display: block;
     /* object-fit: cover; */
 }
+
 .bg-text{
     color: var(--text);
     font-weight: 600;
@@ -76,6 +79,11 @@ padding-left: 0;
    padding-top: 2rem;
     display: flex;
     align-items: center;
+  
+}
+.borders p.bg-text{
+    white-space: nowrap;
+    align-self: self-start;
 }
 
 .borders .b-countries{
@@ -83,16 +91,29 @@ padding-left: 0;
     margin-left: 1rem;
     align-items: center;
     gap: 0.55rem;
+    flex-wrap: wrap;
+    color: var(--text);
 }
 .b-countries .countries{
 /* margin-right: 0.5rem; */
 padding: 0.25rem 1rem;
 box-shadow: 0px 0px 2px var(--input);
+cursor: pointer;
+
 }
+
+.b-countries .countries:hover{
+    transform: scale(1.025);
+}
+.b-countries a{
+    color: var(--text);
+}
+
 .info-capital{
     word-wrap: break-word;
     word-break: break-all;
 }
+
 .left,
 .right{
     width: 100%;
@@ -101,8 +122,44 @@ box-shadow: 0px 0px 2px var(--input);
     color: var(--input) ;
 }
 
-@media(max-width:768px){
-    article#showcase img{
-        object-fit: contain;
+@media(max-width:1025px){
+   .borders{
+    padding-top: 0.5rem;
+   }
+}
+
+@media(max-width:800px){
+    #showcase{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:450px){
+    #showcase{
+        grid-template-columns: 1fr;
+    }
+    .borders{
+        flex-direction: column;
+        align-items: start;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .borders .b-countries{
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .arrow-nav{
+        margin-bottom: 0rem;
+    }
+    .country-info{
+        padding-top: 0rem;
+    }
+    .showcase-img{
+        padding-top: 3rem;
+        height: 100%;
+    }
+    .showcase-info{
+        padding-left: 0;
     }
 }

@@ -10,7 +10,7 @@ document.getElementById('filter').addEventListener('keyup',filter)
 data.getData()
 .then(data => {
     data.forEach(item => {
-        if(item.name.common === "Belgium"){
+        if(item.name.common === "Guatemala"){
             console.log(item)
     }
     })
