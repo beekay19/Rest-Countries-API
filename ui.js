@@ -9,13 +9,13 @@ class UI {
                     <img src="${item.flags.png}" alt="${item.flags.alt}">
                 </div>
                 <div class="box-info">
-                    <h3 class="country"><a href="info.html?code=${item.cca3}">${item.name.common}</a></h3>
+                    <h3 class="country"><a href="info.html?code=${item.cca3}" class='country-info'>${item.name.common}</a></h3>
                     <div class="population"><span class="bg-text">population:</span> ${item.population.toLocaleString()}</div>
                     <div class="region"><span class="bg-text">Region:</span> ${
                       item.region
                     }</div>
                     <div class="capital"><span class="bg-text">capital:</span> ${
-                      item.capital
+                      capital(item.capital)
                     }
                     </div>
                 </div>
@@ -58,7 +58,7 @@ class UI {
             </aside>
              <aside class="box-info right">
                 <div class="info-region pb-s"><span class="bg-text">Top Level Domain: </span> ${
-                  data.tld
+                  tdl(data)
                 }</div>
                     <div class="info-sub-region pb-s"><span class="bg-text">currencies: </span>${currency(
                       data.currencies
@@ -90,4 +90,20 @@ function language(data) {
     list.push(data[item]);
   }
   return list.join(",");
+}
+
+function tdl(data){
+  if(data.tld !== undefined){
+    return data.tdl
+  }else{
+    return 'NOT AVAILABLE'
+  }
+}
+
+function capital(data){
+  if(data !== undefined){
+    return data
+  }else{
+    return 'Not Found'
+  }
 }
